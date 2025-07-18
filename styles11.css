@@ -803,6 +803,26 @@ body {
   }
 }
 
+.fullscreen-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* Or 'space-around', 'space-between' */
+  align-items: center;
+  background-color: #f5f5f5; /* Optional */
+  overflow: hidden;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.fullscreen-section img {
+  max-width: 40%;
+  max-height: 80%;
+  object-fit: cover;
+  border-radius: 8px; /* Optional */
+}
+
+
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
