@@ -188,7 +188,26 @@ body {
     width: clamp(70px, 15vw, 120px);
   }
 }
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #e10600;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #e10600 #f2f2f2;
+}
 /* Main Content */
 .main-content {
   margin-top: 64px;
