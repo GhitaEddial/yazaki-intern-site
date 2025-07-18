@@ -807,9 +807,9 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;  /* Or 'space-around', 'space-between' */
+  justify-content: space-around;  /* Or 'space-around', 'space-between' */
   align-items: center;
-  background-color: #f5f5f5; /* Optional */
+  background-color: #010000; /* Optional */
   overflow: hidden;
   gap: 2rem;
   padding: 1rem;
