@@ -190,6 +190,7 @@ body {
     width: clamp(70px, 15vw, 120px);
   }
 }
+
 /* Hero Section */
 .about-hero-multi {
   padding-top: 120px;
