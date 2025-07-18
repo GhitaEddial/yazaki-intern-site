@@ -1,134 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yazaki Intern Guide</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts: Montserrat -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Yazaki Intern Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/yazaki_logo.png" as="image">
+    <link rel="preload" href="assets/yazaki_vid.mp4" as="video" type="video/mp4">
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <div class="logo-group">
-        <a href="#home">
-        <img src="assets/yazaki_logo.png" alt="Yazaki Logo" class="logo-img">
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo-group">
+                <a href="#home">
+                    <img src="assets/yazaki_logo.png" alt="Yazaki Logo" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#departments">Departments</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-bg-slider">
+                <video class="hero-bg-video active" autoplay muted loop playsinline preload="metadata">
+                    <source src="assets/yazaki_vid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="assets/image1.avif" alt="Hero Photo 1" class="hero-bg-image" loading="lazy" />
+                <img src="assets/photo2.png" alt="Hero Photo 2" class="hero-bg-image" loading="lazy" />
+            </div>
+            <div class="hero-indicators" aria-label="Media indicators">
+                <span class="hero-dot active" aria-label="Video active"></span>
+                <span class="hero-dot" aria-label="Image 1"></span>
+                <span class="hero-dot" aria-label="Image 2"></span>
+            </div>
+            <div class="container hero-content">
+                <h1>Welcome to Yazaki's Intern Guide</h1>
+                <p>Your all-in-one resource for a successful internship</p>
+                <div class="hero-buttons">
+                    <a href="pages/about.html" class="btn btn-primary">Get Started</a>
+                    <a href="#departments" class="btn btn-secondary">View Departments</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="departments" id="departments">
+            <div class="container">
+                <h2>Departments Overview</h2>
+                <div class="departments-scroll-hint">
+                    <span>Scroll</span>
+                    <svg width="32" height="16" viewBox="0 0 32 16" fill="none" style="vertical-align:middle;" aria-hidden="true">
+                        <path d="M2 8h28M24.5 4l5.5 4-5.5 4" stroke="#e10600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="departments-scroll-container" role="list">
+                    <a href="pages/bsc.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>BSC</h3>
+                        <p>Business Support Center: Centralized support for core business activities.</p>
+                    </a>
+                    <a href="pages/it.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>IT</h3>
+                        <p>Ensures robust technology infrastructure and digital solutions for all teams.</p>
+                    </a>
+                    <a href="pages/procurement.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>Procurement</h3>
+                        <p>Manages sourcing, purchasing, and vendor relationships to secure vital resources.</p>
+                    </a>
+                    <a href="pages/quality.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>Quality</h3>
+                        <p>Drives quality assurance, process improvement, and compliance for Yazaki products.</p>
+                    </a>
+                    <a href="pages/fret.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>Freight</h3>
+                        <p>Freight: Oversees transportation, goods movement, and timely delivery.</p>
+                    </a>
+                    <a href="pages/hr.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>HR</h3>
+                        <p>Human Resources: Supports people, policies, and organizational culture.</p>
+                    </a>
+                    <a href="pages/customer-service.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>Customer Service</h3>
+                        <p>Handles client relationships, satisfaction, and service excellence.</p>
+                    </a>
+                    <a href="pages/3pl.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>3PL</h3>
+                        <p>Third Party Logistics: Manages outsourced logistics and supply chain solutions.</p>
+                    </a>
+                    <a href="pages/logistics.html" class="department-card" tabindex="0" role="listitem">
+                        <h3>Logistics</h3>
+                        <p>Coordinates supply, storage, and efficient distribution of goods company-wide.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2>About</h2>
+                <p>Welcome to our company! We are committed to excellence, innovation, and empowering our departments to deliver outstanding service and value. Our team works collaboratively to drive results, embrace change, and support our clients and partners at every step. Discover more about our mission, vision, and what makes us unique.</p>
+                <a href="pages/about.html" class="about-link-button">Learn More</a>
+            </div>
+        </section>
+
+        <a href="pages/networking.html" class="networking-section-link">
+            <section class="networking-section" id="networking">
+                <div class="networking-content">
+                    <h2>Networking</h2>
+                    <p>Connect with Yazaki Hub Tangier team members and grow your professional network! Explore LinkedIn profiles of colleagues and build lasting relationships.</p>
+                </div>
+            </section>
         </a>
-      </div>
-      <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#departments">Departments</a></li>
-        </ul>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
-    </div>
-  </header>
+    </main>
 
-  <section class="hero" id="home">
-    <div class="hero-bg-slider">
-      <video class="hero-bg-video" autoplay muted loop playsinline>
-        <source src="assets/yazaki_vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <img src="assets/image1.avif" alt="Hero Photo 1" class="hero-bg-image" />
-      <img src="assets/photo2.png" alt="Hero Photo 2" class="hero-bg-image" />
-    </div>
-    <div class="hero-indicators">
-      <span class="hero-dot active"></span>
-      <span class="hero-dot"></span>
-      <span class="hero-dot"></span>
-    </div>
-    <div class="container hero-content">
-      <h1>Welcome to Yazaki's Intern Guide</h1>
-      <p>Your all-in-one resource for a successful internship</p>
-      <div class="hero-buttons">
-        <a href="pages/about.html" class="btn btn-primary">Get Started</a>
-        <a href="#departments" class="btn btn-secondary">View Departments</a>
-      </div>
-    </div>
-  </section>
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 Yazaki Intern Guide. All rights reserved.
+        </div>
+    </footer>
 
-<section class="departments" id="departments">
-  <div class="container">
-    <h2>Departments Overview</h2>
-    <div class="departments-scroll-hint">
-      <span>Scroll</span>
-      <svg width="32" height="16" viewBox="0 0 32 16" fill="none" style="vertical-align:middle;"><path d="M2 8h28M24.5 4l5.5 4-5.5 4" stroke="#e10600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </div>
-    <div class="departments-scroll-container">
-      <a href="pages/bsc.html" class="department-card" tabindex="0">
-        <h3>BSC</h3>
-        <p>Business Support Center: Centralized support for core business activities.</p>
-      </a>
-      <a href="pages/it.html" class="department-card" tabindex="0">
-        <h3>IT</h3>
-        <p>Ensures robust technology infrastructure and digital solutions for all teams.</p>
-      </a>
-      <a href="pages/procurement.html" class="department-card" tabindex="0">
-        <h3>Procurement</h3>
-        <p>Manages sourcing, purchasing, and vendor relationships to secure vital resources.</p>
-      </a>
-      <a href="pages/quality.html" class="department-card" tabindex="0">
-        <h3>Quality</h3>
-        <p>Drives quality assurance, process improvement, and compliance for Yazaki products.</p>
-      </a>
-      <a href="pages/fret.html" class="department-card" tabindex="0">
-        <h3>Freight</h3>
-        <p>Freight: Oversees transportation, goods movement, and timely delivery.</p>
-      </a>
-      <a href="pages/hr.html" class="department-card" tabindex="0">
-        <h3>HR</h3>
-        <p>Human Resources: Supports people, policies, and organizational culture.</p>
-      </a>
-      <a href="pages/customer-service.html" class="department-card" tabindex="0">
-        <h3>Customer Service</h3>
-        <p>Handles client relationships, satisfaction, and service excellence.</p>
-      </a>
-      <a href="pages/3pl.html" class="department-card" tabindex="0">
-        <h3>3PL</h3>
-        <p>Third Party Logistics: Manages outsourced logistics and supply chain solutions.</p>
-      </a>
-      <a href="pages/logistics.html" class="department-card" tabindex="0">
-        <h3>Logistics</h3>
-        <p>Coordinates supply, storage, and efficient distribution of goods company-wide.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="about-section" id="about">
-  <div class="about-content">
-    <h2>About</h2>
-    <p>
-      Welcome to our company! We are committed to excellence, innovation, and empowering our departments to deliver outstanding service and value. Our team works collaboratively to drive results, embrace change, and support our clients and partners at every step. Discover more about our mission, vision, and what makes us unique.
-    </p>
-    <a href="pages/about.html" class="about-link-button">Learn More</a>
-  </div>
-</section>
-
-<a href="pages/networking.html" class="networking-section-link" >
-  <section class="networking-section" id="networking">
-    <div class="networking-content">
-      <h2>Networking</h2>
-      <p>
-        Connect with Yazaki Hub Tangier team members and grow your professional network! Explore LinkedIn profiles of colleagues and build lasting relationships.
-      </p>
-    </div>
-  </section>
-</a>
-
-  <footer class="footer">
-    <div class="container">
-      &copy; 2025 Yazaki Intern Guide. All rights reserved.
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
