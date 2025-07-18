@@ -1,16 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: "Montserrat", Arial, sans-serif;
-  line-height: 1.6;
-  color: #ffffff;
-  overflow-x: hidden;
   background: #1a1a1a;
+  color: #ffffff;
+  line-height: 1.6;
   font-size: 1rem;
+  overflow-x: hidden;
 }
 
 /* Animated Background */
