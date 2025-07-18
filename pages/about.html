@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Yazaki Morocco - Intern Guide</title>
+    <link rel="stylesheet" href="../styles1.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-group">
+                <a href="../index.html">
+                <img src="../assets/yazaki_logo.png" alt="Yazaki Logo" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html" class="active">About</a></li>
+                    <li><a href="../index.html#departments">Departments</a></li>
+                    <li><a href="../pages/networking.html">Networking</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero-multi">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">📚</span>
+                    <span>Essential Knowledge for Interns</span>
+                </div>
+                <h1>Everything You Need to Know About Yazaki Morocco</h1>
+                <p class="hero-subtitle">Your complete guide to understanding our operations, culture, and what makes Yazaki Morocco a leader in automotive manufacturing</p>
+                
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Production Plants</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Employees</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Years in Morocco</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-faq-grid">
+                <div class="faq-card">
+                    <div class="card-header">
+                        <div class="card-icon">🏭</div>
+                        <div class="card-number">01</div>
+                    </div>
+                    <div class="faq-content">
+                        <strong>What is Yazaki and why is Morocco important?</strong>
+                        <p>Yazaki is a global leader in automotive wiring harnesses and electrical components. Our Morocco operations serve as a strategic bridge between Europe and Africa, leveraging skilled local talent and excellent logistics to supply major automotive manufacturers worldwide.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-header">
+                        <div class="card-icon">📍</div>
+                        <div class="card-number">02</div>
+                    </div>
+                    <div class="faq-content">
+                        <strong>Where are our facilities located?</strong>
+                        <ul>
+                            <li><strong>Tangier HUB</strong> –  Centralization of plants </li>
+                            <li><strong>Kénitra Plants</strong> – Specialized electrical systems</li>
+                            <li><strong>Meknès Facilities</strong> – High-volume harness production</li>
+                            <li><strong>Tangier TFZ</strong> – Main production and logistics center</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-header">
+                        <div class="card-icon">🤝</div>
+                        <div class="card-number">03</div>
+                    </div>
+                    <div class="faq-content">
+                        <strong>Who are our main customers?</strong>
+                        <p>We proudly serve leading automotive manufacturers including Renault, Stellantis (Peugeot, Citroën, Fiat), BMW Group, Nissan, and Ford. Our products are found in vehicles across Europe, Africa, and beyond.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-header">
+                        <div class="card-icon">⚡</div>
+                        <div class="card-number">04</div>
+                    </div>
+                    <div class="faq-content">
+                        <strong>What is our operational philosophy?</strong>
+                        <p>We follow lean manufacturing principles including 5S workplace organization,Kaizen continuous improvement,Poka-Yoke error prevention, and Just-in-Time production. Every team member is empowered to identify and eliminate waste.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <div class="card-number">05</div>
+                    </div>
+                    <div class="faq-content">
+                        <strong>What should I expect as an intern?</strong>
+                        <p>You'll receive comprehensive training, work on real projects that impact our operations, and be mentored by experienced professionals. We believe in hands-on learning and will challenge you to grow both technically and professionally.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card">
+                    <div class="card-header">
+                        <div class="card-icon">🌟</div>
+                        <div class="card-number">06</div>
+                    </div>
+                    <div class="faq-content">
+                        <strong>How can I succeed during my internship?</strong>
+                        <p>Be curious, ask questions, embrace our lean culture, maintain high safety standards, and actively participate in improvement initiatives. Show initiative, be reliable, and remember that every role contributes to our collective success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; 2025 Yazaki Morocco Intern Guide. Building tomorrow's automotive leaders.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('open');
+            });
+        }
+
+        // Smooth scroll animations for cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all FAQ cards
+        document.querySelectorAll('.faq-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

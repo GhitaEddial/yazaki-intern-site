@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSC - Business Support Center | Yazaki Morocco</title>
+    <link rel="stylesheet" href="../styles11.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo-group">
+                <a href="../index.html">
+                <img src="../assets/yazaki_logo.png" alt="Yazaki Logo" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../index.html#departments" class="active">Departments</a></li>
+                    <li><a href="../pages/networking.html">Networking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="schema-particles"></div>
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🏢</span>
+                <span>Business Support Center</span>
+            </div>
+            <h1>BSC Schema Overview</h1>
+            <p>Four interconnected departments managing supplier data and business processes</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Sub-Departments</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">SAP</span>
+                    <span class="stat-label">Integration</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Operations</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BSC Schema Section -->
+    <section class="bsc-schema">
+        <div class="container">
+            <div class="schema-header">
+                <h2>BSC Department Schema</h2>
+                <p>Interconnected workflow across four specialized units</p>
+            </div>
+            
+            <div class="schema-diagram">
+                <!-- Central BSC Hub -->
+                <div class="central-hub">
+                    <div class="hub-content">
+                        <h3>BSC</h3>
+                        <p>Business Support Center</p>
+                        <div class="hub-connections">
+                            <div class="connection-line line-1"></div>
+                            <div class="connection-line line-2"></div>
+                            <div class="connection-line line-3"></div>
+                            <div class="connection-line line-4"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Four Sub-Departments -->
+                <div class="sub-department invoicing" data-dept="invoicing">
+                    <div class="dept-header">
+                        <div class="dept-icon">📋</div>
+                        <h4>Invoicing</h4>
+                    </div>
+                    <div class="dept-content">
+                        <ul class="dept-functions">
+                            <li>Monitor and treat parked invoices</li>
+                            <li>Resolution of blocked invoices</li>
+                            <li>EDI errors monitoring (IDOCS)</li>
+                            <li>Check all received invoices for payment clearance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sub-department mdg" data-dept="mdg">
+                    <div class="dept-header">
+                        <div class="dept-icon">🏛️</div>
+                        <h4>MDG</h4>
+                        <span class="dept-subtitle">Master Data Governance</span>
+                    </div>
+                    <div class="dept-content">
+                        <div class="mdg-sections">
+                            <div class="mdg-section">
+                                <h5>Direct Vendor & Affiliate Customers</h5>
+                                <ul>
+                                    <li>Creation and Extension</li>
+                                    <li>SAP Purchasing data</li>
+                                    <li>GPDB data</li>
+                                </ul>
+                            </div>
+                            <div class="mdg-section">
+                                <h5>Indirect Vendor & External Customer</h5>
+                                <ul>
+                                    <li>Creation & Extension</li>
+                                    <li>SAP Financial data</li>
+                                    <li>Coupa data</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-department mdm" data-dept="mdm">
+                    <div class="dept-header">
+                        <div class="dept-icon">📊</div>
+                        <h4>MDM</h4>
+                        <span class="dept-subtitle">Master Data Management</span>
+                    </div>
+                    <div class="dept-content">
+                        <ul class="dept-functions">
+                            <li>Create Materials master data and activate them</li>
+                            <li>Create MMSA master data</li>
+                            <li>Create Purchasing info record</li>
+                            <li>SA generation</li>
+                            <li>Create source list</li>
+                            <li>Extend materials in EWM</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sub-department gpdb" data-dept="gpdb">
+                    <div class="dept-header">
+                        <div class="dept-icon">🌐</div>
+                        <h4>GPDB</h4>
+                        <span class="dept-subtitle">Global Price Data Base</span>
+                    </div>
+                    <div class="dept-content">
+                        <ul class="dept-functions">
+                            <li>Creation, update and modification of contracts</li>
+                            <li>Creation of Indirect materials Master Data in SAP</li>
+                            <li>GPDB data input (Incoterm, price, unit of measure, MOQ, SPS)</li>
+                            <li>Data cleansing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Data Team Process -->
+    <section class="master-data-process">
+        <div class="container">
+            <div class="process-header">
+                <h2>Master Data Team Process</h2>
+                <p>Complete workflow from material creation to activation</p>
+            </div>
+            
+            <div class="process-flow">
+                <div class="process-step" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Material Creation (MM01)</h4>
+                        <div class="step-details">
+                            <p><strong>Transaction:</strong> MM01</p>
+                            <p><strong>Views:</strong> Basic1, Basic2, Classification</p>
+                            <div class="step-fields">
+                                <div class="field-group">
+                                    <h5>Required Fields:</h5>
+                                    <ul>
+                                        <li>Description</li>
+                                        <li>Basic unit</li>
+                                        <li>Material group</li>
+                                        <li>Division (02 default, 03 if material group starts with 7G)</li>
+                                        <li>Weight (2g default, 10g for twisted wire, 100g for harness/coaxial)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Material Extension</h4>
+                        <div class="step-details">
+                            <p>Link material to requested plant</p>
+                            <p><em>Note: This process can be automated</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>PIR Creation (ME11)</h4>
+                        <div class="step-details">
+                            <p><strong>Transaction:</strong> ME11</p>
+                            <p>Create Purchasing Info Records containing:</p>
+                            <ul>
+                                <li>Price information</li>
+                                <li>SPS (Supplier Packaging Specification)</li>
+                                <li>MOQ (Minimum Order Quantity)</li>
+                                <li>Planning details</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>SA Generation (ME31L)</h4>
+                        <div class="step-details">
+                            <p><strong>Transaction:</strong> ME31L</p>
+                            <p>Generate Scheduling Agreement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="5">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Source List Activation (ME01)</h4>
+                        <div class="step-details">
+                            <p><strong>Transaction:</strong> ME01</p>
+                            <p>Activate source list for procurement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SAP Transactions Reference -->
+    <section class="sap-transactions">
+        <div class="container">
+            <div class="transactions-header">
+                <h2>SAP Transaction Codes</h2>
+                <p>Key transactions used in BSC operations</p>
+            </div>
+            
+            <div class="transactions-grid">
+                <div class="transaction-card">
+                    <div class="transaction-code">MM01</div>
+                    <div class="transaction-info">
+                        <h4>Create Material</h4>
+                        <p>Initial material master creation</p>
+                    </div>
+                </div>
+                
+                <div class="transaction-card">
+                    <div class="transaction-code">MM02</div>
+                    <div class="transaction-info">
+                        <h4>Modify Material</h4>
+                        <p>Update existing material records</p>
+                    </div>
+                </div>
+                
+                <div class="transaction-card">
+                    <div class="transaction-code">MM03</div>
+                    <div class="transaction-info">
+                        <h4>Display Material</h4>
+                        <p>View material master data</p>
+                    </div>
+                </div>
+                
+                <div class="transaction-card">
+                    <div class="transaction-code">ME11</div>
+                    <div class="transaction-info">
+                        <h4>Create PIR</h4>
+                        <p>Purchasing Info Record creation</p>
+                    </div>
+                </div>
+                
+                <div class="transaction-card">
+                    <div class="transaction-code">ME31L</div>
+                    <div class="transaction-info">
+                        <h4>Create SA</h4>
+                        <p>Scheduling Agreement generation</p>
+                    </div>
+                </div>
+                
+                <div class="transaction-card">
+                    <div class="transaction-code">ME01</div>
+                    <div class="transaction-info">
+                        <h4>Source List</h4>
+                        <p>Activate procurement source list</p>
+                    </div>
+                </div>
+                
+                <div class="transaction-card">
+                    <div class="transaction-code">XK01</div>
+                    <div class="transaction-info">
+                        <h4>Create Vendor</h4>
+                        <p>Supplier record creation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <img src="/Users/mac/Desktop/trial/assets/photo2.jpg">
+        <img src="/Users/mac/Desktop/trial/assets/photo1.jpg">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="position: relative;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Yazaki Morocco - Business Support Center. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Schema interaction animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate schema elements on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            document.querySelectorAll('.sub-department, .process-step, .transaction-card').forEach(el => {
+                observer.observe(el);
+            });
+
+            // Schema department hover effects
+            const departments = document.querySelectorAll('.sub-department');
+            const centralHub = document.querySelector('.central-hub');
+
+            departments.forEach(dept => {
+                dept.addEventListener('mouseenter', function() {
+                    const deptType = this.dataset.dept;
+                    centralHub.classList.add(`highlight-${deptType}`);
+                    this.classList.add('active');
+                });
+
+                dept.addEventListener('mouseleave', function() {
+                    centralHub.classList.remove('highlight-invoicing', 'highlight-mdg', 'highlight-mdm', 'highlight-gpdb');
+                    this.classList.remove('active');
+                });
+            });
+
+            // Process step animations
+            const processSteps = document.querySelectorAll('.process-step');
+            processSteps.forEach((step, index) => {
+                setTimeout(() => {
+                    step.classList.add('animate-in');
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

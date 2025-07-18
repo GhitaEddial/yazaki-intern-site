@@ -1,0 +1,413 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: -60px;
+}
+
+.logo-img {
+  height: 2.3pc;
+  width: 15pc;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #18181a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+  letter-spacing: 1px;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e10600;
+  border-bottom: 2px solid #e10600;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 64px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #e10600 0%, #b30500 100%);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Overview Section */
+.overview-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #18181a;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.overview-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.overview-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.overview-card h3 {
+  font-size: 1.25rem;
+  color: #18181a;
+  margin-bottom: 1rem;
+}
+
+.overview-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #18181a;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-item h3 {
+  color: #e10600;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e10600;
+}
+
+.service-item ul {
+  list-style: none;
+}
+
+.service-item li {
+  padding: 0.5rem 0;
+  color: #666;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.service-item li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #e10600;
+  font-weight: bold;
+}
+
+/* Team Section */
+.team-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #18181a;
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border-left: 4px solid #e10600;
+}
+
+.team-card h3 {
+  color: #18181a;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.team-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Technology Stack Section */
+.tech-stack-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.tech-stack-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #18181a;
+  margin-bottom: 3rem;
+}
+
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tech-category {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tech-category h3 {
+  color: #e10600;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: #e10600;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.contact-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #18181a;
+  margin-bottom: 3rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.contact-item {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contact-item h3 {
+  color: #e10600;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.contact-item p {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item strong {
+  color: #18181a;
+}
+
+/* Footer */
+.footer {
+  background: #18181a;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-stats {
+    gap: 2rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .section-header h2,
+  .services-section h2,
+  .team-section h2,
+  .tech-stack-section h2,
+  .contact-content h2 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .logo-group {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .overview-grid,
+  .services-grid,
+  .team-grid,
+  .tech-categories,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
